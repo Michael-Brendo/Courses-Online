@@ -1,0 +1,7 @@
+s = input("type something: ")
+print(type(s))
+print("It's a number?", s.isalnum())
+print("It's a alpha?", s.isalpha())
+print("It's a ascii?", s.isascii())
+print("It's a decimal?", s.isdecimal())
+print("It's a space?", s.isspace())
