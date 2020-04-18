@@ -112,7 +112,7 @@ function colisaoRaqueteBiblioteca(x, y){
 
 function movimentaRaqueteOponente(){
   velocidadeYOponente = yBolinha -yRaqueteOponente - cRaquete / 2 - 30;
-  yRaqueteOponente += velocidadeYOponente + 40//chanceDeErrar;
+  yRaqueteOponente += velocidadeYOponente + 40;//chanceDeErrar;
   //calculaChanceDeErrar()
 }
 
@@ -143,14 +143,14 @@ function marcaPonto(){
 
 function calculaChanceDeErrar() {
   if (pontosOponente >= pontosJogador) {
-    chanceDeErrar += 1
+    chanceDeErrar += 1;
     if (chanceDeErrar >= 39){
-    chanceDeErrar = 40
+    chanceDeErrar = 40;
     }
   } else {
-    chanceDeErrar -= 1
+    chanceDeErrar -= 1;
     if (chanceDeErrar <= 35){
-    chanceDeErrar = 35
+    chanceDeErrar = 35;
     }
   }
 }
