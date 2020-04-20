@@ -1,2 +1,2 @@
 # Curses
-    Online course exercises
+    Online courses exercises.
