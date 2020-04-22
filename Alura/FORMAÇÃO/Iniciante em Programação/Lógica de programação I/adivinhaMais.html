@@ -1,0 +1,61 @@
+<meta charset="UTF-8">
+
+<input/>
+<button> Compare ak! </button>
+
+<script>
+    var segredo = sorteiaNumeros(3);
+    var input = document.querySelector("input");
+    input.focus();
+    
+    var achou = false;
+
+    var button = document.querySelector("button");
+
+    function sorteiaNumeros(quantidade){
+        var segredo = [];
+        var numero = 1;
+        while(numero <= quantidade){
+            var numeroAleatorio = sorteia();
+            var achou = false;
+
+            for(var posicao = 0; posicao < segredo.length; posicao++){
+                if(segredo[posicao] == numeroAleatorio){
+                    achou = true;
+                    break;
+                }
+            }
+
+            if(achou == false){
+                segredo.push(numeroAleatorio);
+                numero++;
+            }
+            
+        }
+        return segredo;
+    }
+
+    function sorteia(){
+        segredo.push(Math.round(Math.random() * 10));
+    }
+
+    function verifica(){
+        for(var posicao = 0; posicao < segredo.length; posicao ++){
+            if(input.value == segredo[posicao]){
+                alert("você acertou!");
+                achou = true;
+                break;
+            } 
+        }
+        
+        if(achou == false){
+            alert("Errou!");
+        }
+
+        input.value = "";
+        input.focus();
+    }
+    
+    button.onclick = verifica;
+
+</script>
