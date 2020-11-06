@@ -14,6 +14,7 @@ Escolha de exercicio
 escolha_exercicio = pedir_imformacao("Digite o numero do exercicio:\n")
 
 if escolha_exercicio == "1":
+
     """
     1 - Sendo f(x) = 3x - 2 determine o valor de f(5) + f(0).
     """
@@ -55,3 +56,13 @@ elif escolha_exercicio == "3":
     3 - Crie uma função que receba 2 números e retorne o maior valor.
     """
 
+    def checar_numero(primeiro_numero, segundo_numero):
+        if primeiro_numero > segundo_numero:
+            print(f"O primeiro numero: {primeiro_numero} é maior que o segundo numero: {segundo_numero}")
+        
+        else:
+            print(f"O segundo numero: {segundo_numero} é maior que o primeiro numero: {primeiro_numero}")
+    
+    primeiro_numero = pedir_numero("Digite o primeiro numero:\n")
+    segundo_numero = pedir_numero("Digite o segundo numero:\n")
+    checar_numero(primeiro_numero, segundo_numero)
