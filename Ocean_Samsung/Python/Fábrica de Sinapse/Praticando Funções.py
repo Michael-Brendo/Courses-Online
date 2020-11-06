@@ -1,16 +1,10 @@
 def pedir_imformacao(mensagem):
-    numero = input(mensagem)
-    return numero
+    imformacao = input(mensagem)
+    return imformacao
 
 def pedir_numero(mensagem):
     numero = int(input(mensagem))
     return numero
-
-def calcular_ex1(x):
-    return 3 * x - 2
-
-def calcula_custos(pecas):
-    return custo_fixo + (pecas * custo_variavel)
 
 
 """
@@ -18,10 +12,14 @@ Escolha de exercicio
 """
 
 escolha_exercicio = pedir_imformacao("Digite o numero do exercicio:\n")
+
 if escolha_exercicio == "1":
     """
     1 - Sendo f(x) = 3x - 2 determine o valor de f(5) + f(0).
     """
+
+    def calcular_ex1(x):
+        return 3 * x - 2
 
     numero01 = pedir_numero("Digite o valor de x da função:\n")
     numero02 = pedir_numero("Digite o segundo valor de x da função:\n")
@@ -41,9 +39,19 @@ elif escolha_exercicio == "2":
     o custo de produção de 100 peças.
     """
 
+    def calcula_custos(pecas):
+        return custo_fixo + (pecas * custo_variavel)
+
     custo_fixo = 30
     custo_variavel = 2
 
     quantidade_de_pecas = pedir_numero("Digite o número de peças para calcular o custo de produção:\n")
 
     print(f"O custo da produção de {quantidade_de_pecas} peças é de R$ {calcula_custos(quantidade_de_pecas):.2f}")
+
+elif escolha_exercicio == "3":
+
+    """
+    3 - Crie uma função que receba 2 números e retorne o maior valor.
+    """
+
