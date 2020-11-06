@@ -6,7 +6,6 @@ def pedir_numero(mensagem):
     numero = int(input(mensagem))
     return numero
 
-
 """
 Escolha de exercicio
 """
@@ -65,4 +64,5 @@ elif escolha_exercicio == "3":
     
     primeiro_numero = pedir_numero("Digite o primeiro numero:\n")
     segundo_numero = pedir_numero("Digite o segundo numero:\n")
+    
     checar_numero(primeiro_numero, segundo_numero)
