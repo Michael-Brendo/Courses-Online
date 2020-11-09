@@ -66,3 +66,25 @@ elif escolha_exercicio == "3":
     segundo_numero = pedir_numero("Digite o segundo numero:\n")
     
     checar_numero(primeiro_numero, segundo_numero)
+
+elif escolha_exercicio == "4":
+    
+    """
+    Crie uma função que receba 3 números e retorne o maior valor
+    """
+
+    def checar_numero(primeiro_numero, segundo_numero, terceiro_numero):
+        if primeiro_numero > segundo_numero and primeiro_numero > terceiro_numero:
+            print(f"O primeiro numero: {primeiro_numero} é maior")
+        
+        elif segundo_numero > primeiro_numero and segundo_numero > terceiro_numero:
+            print(f"O segundo numero: {segundo_numero} é maior")
+
+        elif terceiro_numero > primeiro_numero and terceiro_numero > segundo_numero:
+            print(f"O terceiro numero: {terceiro_numero} é maior")
+
+    primeiro_numero = pedir_numero("Digite o primeiro numero:\n")
+    segundo_numero = pedir_numero("Digite o segundo numero:\n")
+    terceiro_numero = pedir_numero("Digite o terceiro numero:\n")
+
+    checar_numero(primeiro_numero, segundo_numero, terceiro_numero)
