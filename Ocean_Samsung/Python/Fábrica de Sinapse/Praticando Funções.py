@@ -103,8 +103,8 @@ elif escolha_exercicio == "5":
     def calcular_func02(x):
         return (3 * x) + 1
 
-    func01 = pedir_numero("Insira o valor para a função 'f(x) = x – 5':\n")
-    func02 = pedir_numero("Insira o valor para a função 'g(x) = 3x + 1':\n")
+    func01 = pedir_numero("Insira o valor para a função f(x) = x – 5:\n")
+    func02 = pedir_numero("Insira o valor para a função g(x) = 3x + 1:\n")
 
     valor_func01 = calcular_func01(func01)
     valor_func02 = calcular_func02(func02)
