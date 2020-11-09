@@ -70,7 +70,7 @@ elif escolha_exercicio == "3":
 elif escolha_exercicio == "4":
     
     """
-    Crie uma função que receba 3 números e retorne o maior valor
+    4 - Crie uma função que receba 3 números e retorne o maior valor
     """
 
     def checar_numero(primeiro_numero, segundo_numero, terceiro_numero):
@@ -88,3 +88,27 @@ elif escolha_exercicio == "4":
     terceiro_numero = pedir_numero("Digite o terceiro numero:\n")
 
     checar_numero(primeiro_numero, segundo_numero, terceiro_numero)
+
+elif escolha_exercicio == "5":
+
+    """
+    5 - Dadas as funções f(x) = x – 5 e g(x) = 3x + 1, crie um código que retorne o valor da
+    soma de f(9) + g(2). Depois crie um código que retorne o valor da soma das duas funções
+    com números digitados pelo usuário.
+    """
+
+    def calcular_func01(x):
+        return x - 5
+
+    def calcular_func02(x):
+        return (3 * x) + 1
+
+    func01 = pedir_numero("Insira o valor para a função 'f(x) = x – 5':\n")
+    func02 = pedir_numero("Insira o valor para a função 'g(x) = 3x + 1':\n")
+
+    valor_func01 = calcular_func01(func01)
+    valor_func02 = calcular_func02(func02)
+
+    soma_das_func = valor_func01 + valor_func02
+
+    print(f"O valor da soma de f({func01}) e g({func02}) é: {soma_das_func}")
